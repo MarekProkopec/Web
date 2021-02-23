@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap');
+
+body, html{
+    height:100%;
+    width:100%;
+}
+
+body{
+    background:black;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+    font-family: 'Mountains of Christmas', cursive;
+}
+
+div.rocket{
+    position:absolute;
+
+    height: 40px;
+    width:10px;
+    
+}
+
+div.particle{
+    position:absolute;
+
+    width:8px;
+}
+
+
+#message{
+    color:white;
+    font-size:5rem;
+}
