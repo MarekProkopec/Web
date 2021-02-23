@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+html, body{
+    height:100%;
+    width:100%;
+}
+
+body{
+    background: #0f4c75;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+header{
+    width:100%;
+    height: 15%;
+    background: #1b262c;
+    color:#bbe1fa;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+
+    font-size:5vh;
+}
+
+main{
+    height: 85%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+#colors{
+    background: #1b262c;
+    height: 50%;
+    width: 70%;
+
+    border-radius: 40px;
+    padding:30px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap:2vw;
+}
+
+.color{
+    height: 100%;
+    width: 100%;
+    border: solid 3px white;
+
+    border-radius: 30px;
+    background:white;
+}
+
+
+#correct{
+    position: absolute;
+    top:0;
+    z-index: 99;
+
+    height: 100%;
+    width: 100%;
+
+    
+    display: none;
+    justify-content: center;
+    align-items:center;
+    
+    font-size:10vw;
+    
+    background-color: green;
+    animation: answer linear 2s;
+}
+
+#wrong{
+    position: absolute;
+    top:0;
+    z-index: 99;
+
+    height: 100%;
+    width: 100%;
+
+    background-color: red;
+    
+    display: none;
+    justify-content: center;
+    align-items:center;
+
+    font-size:10vw;
+
+    animation: answer linear 2s;
+}
+
+@keyframes answer{
+    0%{opacity: 0;}
+    30%{opacity: 1;}
+    60%{opacity: .2;}
+    80%{opacity: 1;}
+    100%{opacity: 1;}
+}

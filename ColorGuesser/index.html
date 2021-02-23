@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <link rel="stylesheet" href="reset.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>ColorGuesser</title>
+        <script src="script.js"></script>
+    </head>
+    <body onload='init()'>
+        <header>
+            <h1 id="colorvalue">RGB(0, 0, 0)</h1>
+        </header>
+        <main>
+            <div id="colors">
+                <div onclick="clicked(this)" class="color" id="color1"></div>
+                <div onclick="clicked(this)" class="color" id="color2"></div>
+                <div onclick="clicked(this)" class="color" id="color3"></div>
+                <div onclick="clicked(this)" class="color" id="color4"></div>
+                <div onclick="clicked(this)" class="color" id="color5"></div>
+                <div onclick="clicked(this)" class="color" id="color6"></div>
+            </div>
+        </main>
+        <div clas="endscreen" id="correct">
+            <h1>CORRECT</h1>
+        </div>
+        <div clas="endscreen" id="wrong">
+            <h1>WRONG!</h1>
+        </div>
+    </body>
+</html>
