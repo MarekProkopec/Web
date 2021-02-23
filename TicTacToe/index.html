@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <link rel="stylesheet" href="reset.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="fontawesome.js"></script><!--  icons - use: <i class="fas fa-repeat"></i> -->
+        <title>TicTacToe</title>
+        <script src="script.js"></script>
+    </head>
+    <body onload="main()">
+        <div id="player"></div>
+        <div id="board">
+            <div class="square" id="s0"></div>
+            <div class="square" id="s1"></div>
+            <div class="square" id="s2"></div>
+            
+            <div class="square" id="s3"></div>
+            <div class="square" id="s4"></div>
+            <div class="square" id="s5"></div>
+
+            <div class="square" id="s6"></div>
+            <div class="square" id="s7"></div>
+            <div class="square" id="s8"></div>
+            <div id="border-cover"></div>
+        </div>
+        <div id="restart">
+            <h1 id="winmsg">WON!</h1>
+            <h2>Do you want to start over?</h2>
+            <div>
+                <div id="yes"onclick="location.reload();">YES</div>
+                <a id="no" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstleyVEVO">NO</a>
+            </div>
+        </div>
+    </body>
+</html>
