@@ -1,0 +1,47 @@
+<!-- track images from https://www.f1gamesetup.com/f1-2019/circuits -->
+
+
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <link rel="stylesheet" href="css/reset.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js"></script>
+        <link rel="icon" type="image/png" href="https://www.overclockersclub.com/siteimages/news/news42480_1-f1_2019_gets_full_ingame_trailer_mini.png"/>
+        <title>F1 2019 track generator</title>
+    </head>
+    <body onload="init()">
+        <header>
+            <img src="https://www.overclockersclub.com/siteimages/news/news42480_1-f1_2019_gets_full_ingame_trailer_mini.png">
+            <h1>Random track generator</h1>
+        </header>
+        <main>
+            <div id="current_track">
+                <div id="track_text">
+                    <h1 id="race_name">Race name</h1>
+                    <h1 id="track_name">Track name</h1>
+                </div>
+                <img id="track_map" alt="track map" src="https://www.overclockersclub.com/siteimages/news/news42480_1-f1_2019_gets_full_ingame_trailer_mini.png">
+            </div>
+            <div id="tracks">
+            </div>
+        </main>
+        <button id="generate" onclick='generate()'>Generate</button>
+        <div id="settings">
+            <div>
+                <label for="incshorts">Include short tracks</label>
+                <input id="incshorts" type="checkbox" onchange="selectchanged()">
+            </div>
+            <div>
+                <label for="usetimeout">Use timeout</label>
+                <input id="usetimeout" checked type="checkbox" onchange="timeoutchange()">
+            </div>
+            <div>
+                <label for="2020tracks">Include 2020 tracks</label>
+                <input id="2020tracks" checked type="checkbox" onchange="tracks2020change()" checked>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,170 @@
+{
+    "tracks":[
+        {
+            "name":"Australian GP",
+            "track_name":"Albert Park",
+            "logo_src":"https://www.f1gamesetup.com/img/flags/xs_australian.png",
+            "track_src":"https://www.f1gamesetup.com/img/circuits/australian.png"
+        },
+        {
+            "name":"Bahrain GP",
+            "track_name":"Bahrain International Circuit",
+            "logo_src":"https://www.f1gamesetup.com/img/flags/xs_bahrain.png",
+            "track_src":"https://www.f1gamesetup.com/img/circuits/bahrain.png"
+        },
+        {
+            "name":"Chinese GP",
+            "track_name":"Shanghai International Circuit",
+            "logo_src":"https://www.f1gamesetup.com/img/flags/xs_chinese.png",
+            "track_src":"https://www.f1gamesetup.com/img/circuits/chinese.png"
+        },
+        {
+            "name":"Azerbaijan GP",
+            "track_name":"Baku City Circuit",
+            "logo_src":"https://www.f1gamesetup.com/img/flags/xs_azerbaijan.png",
+            "track_src":"https://www.f1gamesetup.com/img/circuits/azerbaijan.png"
+        },
+        {
+            "name":"Spanish GP",
+            "track_name":"Circuit de Catalunya",
+            "logo_src":"https://www.f1gamesetup.com/img/flags/xs_spanish.png",
+            "track_src":"https://www.f1gamesetup.com/img/circuits/spanish.png"
+        },
+        {
+            "name":"Monaco GP",
+            "track_name":"Monaco",
+            "logo_src":"https://www.f1gamesetup.com/img/flags/xs_monaco.png",
+            "track_src":"https://www.f1gamesetup.com/img/circuits/monaco.png"
+        },
+        {
+            "name":"Canadian GP",
+            "track_name":"Circuit Gilles Villeneuve",
+            "logo_src":"https://www.f1gamesetup.com/img/flags/xs_canadian.png",
+            "track_src":"https://www.f1gamesetup.com/img/circuits/canadian.png"
+        },
+        {
+            "name":"French GP",
+            "track_name":"Paul Ricard",
+            "logo_src":"https://www.f1gamesetup.com/img/flags/xs_french.png",
+            "track_src":"https://www.f1gamesetup.com/img/circuits/french.png"
+        },
+        {
+            "name":"Austrian GP",
+            "track_name":"Red Bull Ring",
+            "logo_src":"https://www.f1gamesetup.com/img/flags/xs_austrian.png",
+            "track_src":"https://www.f1gamesetup.com/img/circuits/austrian.png"
+        },
+        {
+            "name":"British GP",
+            "track_name":"Silverstone",
+            "logo_src":"https://www.f1gamesetup.com/img/flags/xs_british.png",
+            "track_src":"https://www.f1gamesetup.com/img/circuits/british.png"
+        },
+        {
+            "name":"German GP",
+            "track_name":"Hockenheimring",
+            "logo_src":"https://www.f1gamesetup.com/img/flags/xs_german.png",
+            "track_src":"https://www.f1gamesetup.com/img/circuits/german.png"
+        },
+        {
+            "name":"Hungarian GP",
+            "track_name":"Hungaroring",
+            "logo_src":"https://www.f1gamesetup.com/img/flags/xs_hungarian.png",
+            "track_src":"https://www.f1gamesetup.com/img/circuits/hungarian.png"
+        },
+        {
+            "name":"Belgian GP",
+            "track_name":"Spa-Francorchamps",
+            "logo_src":"https://www.f1gamesetup.com/img/flags/xs_belgium.png",
+            "track_src":"https://www.f1gamesetup.com/img/circuits/belgium.png"
+        },
+        {
+            "name":"Italian GP",
+            "track_name":"Monza",
+            "logo_src":"https://www.f1gamesetup.com/img/flags/xs_italian.png",
+            "track_src":"https://www.f1gamesetup.com/img/circuits/italian.png"
+        },
+        {
+            "name":"Singapore GP",
+            "track_name":"Marina Bay",
+            "logo_src":"https://www.f1gamesetup.com/img/flags/xs_singapore.png",
+            "track_src":"https://www.f1gamesetup.com/img/circuits/singapore.png"
+        },
+        {
+            "name":"Russian GP",
+            "track_name":"Sochi Autodrom",
+            "logo_src":"https://www.f1gamesetup.com/img/flags/xs_russian.png",
+            "track_src":"https://www.f1gamesetup.com/img/circuits/russian.png"
+        },
+        {
+            "name":"Japanese GP",
+            "track_name":"Suzuka",
+            "logo_src":"https://www.f1gamesetup.com/img/flags/xs_japanese.png",
+            "track_src":"https://www.f1gamesetup.com/img/circuits/japanese.png"
+        },
+        {
+            "name":"Mexican GP",
+            "track_name":"Autodromo Hermanos Rodriguez",
+            "logo_src":"https://www.f1gamesetup.com/img/flags/xs_mexican.png",
+            "track_src":"https://www.f1gamesetup.com/img/circuits/mexican.png"
+        },
+        {
+            "name":"United States GP",
+            "track_name":"Circuit of the Americas",
+            "logo_src":"https://www.f1gamesetup.com/img/flags/xs_usa.png",
+            "track_src":"https://www.f1gamesetup.com/img/circuits/usa.png"
+        },
+        {
+            "name":"Brazilian GP",
+            "track_name":"Interlagos",
+            "logo_src":"https://www.f1gamesetup.com/img/flags/xs_brazilian.png",
+            "track_src":"https://www.f1gamesetup.com/img/circuits/brazilian.png"
+        },
+        {
+            "name":"Abu Dhabi GP",
+            "track_name":"Yas Marina",
+            "logo_src":"https://www.f1gamesetup.com/img/flags/xs_uae.png",
+            "track_src":"https://www.f1gamesetup.com/img/circuits/uae.png"
+        }
+    ],
+    "short_tracks":[
+        {
+            "name":"Bahrain GP Short",
+            "track_name":"Bahrain International Circuit Short",
+            "logo_src":"https://www.f1gamesetup.com/img/flags/xs_bahrain.png",
+            "track_src":"https://www.f1gamesetup.com/img/circuits/bahrain.png"
+        },
+        {
+            "name":"British GP Short",
+            "track_name":"Silverstone Short",
+            "logo_src":"https://www.f1gamesetup.com/img/flags/xs_british.png",
+            "track_src":"https://www.f1gamesetup.com/img/circuits/british.png"
+        },
+        {
+            "name":"Japanese GP Short",
+            "track_name":"Suzuka Short",
+            "logo_src":"https://www.f1gamesetup.com/img/flags/xs_japanese.png",
+            "track_src":"https://www.f1gamesetup.com/img/circuits/japanese.png"
+        },
+        {
+            "name":"United States GP Short",
+            "track_name":"Circuit of the Americas Short",
+            "logo_src":"https://www.f1gamesetup.com/img/flags/xs_usa.png",
+            "track_src":"https://www.f1gamesetup.com/img/circuits/usa.png"
+        }
+    ],
+    "2020":[
+        {
+            "name":"Vietnam GP",
+            "track_name":"Hanoi Street Circuit",
+            "logo_src":"https://www.f1gamesetup.com/img/flags/xs_vietnam.png",
+            "track_src":"https://www.f1gamesetup.com/img/circuits/vietnam.png"
+        },
+        {
+            "name":"Netherlands GP",
+            "track_name":"Zandvoort Circuit",
+            "logo_src":"https://www.f1gamesetup.com/img/flags/xs_netherlands.png",
+            "track_src":"https://www.f1gamesetup.com/img/circuits/netherlands.png"
+        }
+    ]
+}
