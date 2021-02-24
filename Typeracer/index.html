@@ -5,9 +5,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <title>Dokument</title>
+        <title>TypeRacer</title>
+        <script src="script.js"></script>
     </head>
-    <body>
-        
+    <body onload="init()">
+        <main>
+            <h1 id="text"></h1>
+            <input oninput="inchanged()" id="input" type="text" placeholder="Write Here">
+        </main>
     </body>
 </html>
