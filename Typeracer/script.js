@@ -23,8 +23,10 @@ function init(){
 function getsentence(){
     document.getElementById('input').value = '';    
 
-    sentence = json[Math.floor(Math.random()*json.length)];
-    sentarr = sentence.split("");
+    do{
+        sentence = json[Math.floor(Math.random()*json.length)];
+        sentarr = sentence.split("");
+    }while(sentarr.length > 500)
     let inh1 = document.getElementById('text');
     
     wronglist = new Array(sentarr.length).fill(false);
@@ -93,7 +95,7 @@ function correctclass(currentletter){
 }
 
 function finished(){
-    let time = (Date.now() - starttime)/60000;
+    let time = (Date.now() - starttime)/1000;
     let sentlength = sentarr.length;
 
     document.querySelector('main').classList.add('fadeout');
@@ -111,7 +113,9 @@ function finished(){
     accreport.innerHTML = `${100 - (Math.floor(wronglist.length/wrongcount*10)/10)}%`;
     
     let speedreport = document.getElementById('speedinfo');
-    speedreport.innerHTML = `${Math.floor(((sentlength/5)/time)*10)/10} WPM`;
+    speedreport.innerHTML = `${Math.floor(((sentlength/5)/(time/60))*10)/10} WPM`;
+
+    document.getElementById('timeinfo').innerHTML = `${Math.floor(time*10)/10} seconds`
 }
 
 function restart(){
