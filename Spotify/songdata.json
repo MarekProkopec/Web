@@ -1,0 +1,40 @@
+{
+    "songs":[
+        {
+            "songname":"Rockstar",
+            "author":"Dababy feat. Boddy Rich",
+            "imgpath":"albums/DaBaby feat. Roddy Rich, 'Rockstar'.jpg",
+            "audiopath":"music/DaBaby rockstar.mp3"
+        },
+        {
+            "songname":"Heavydirysoul",
+            "author":"Twenty One Pilots",
+            "imgpath":"albums/Stressed out 21 pilots.jpg",
+            "audiopath":"music/21pilots - Heavydirtysoul.mp3"
+        },
+        {
+            "songname":"Hope",
+            "author":"The chainsmokers",
+            "imgpath":"albums/Hope the chainsmokers.jpg",
+            "audiopath":"music/The Chainsmokers - Hope.mp3"
+        },
+        {
+            "songname":"Lucid Dreams",
+            "author":"Juice WRLD",
+            "imgpath":"albums/lucid dreams juice wrld.jpg",
+            "audiopath":"music/Juice WRLD - Lucid Dreams.mp3"
+        },
+        {
+            "songname":"Rockstar",
+            "author":"Post Malone",
+            "imgpath":"albums/rockstar - post malone.jpg",
+            "audiopath":"music/Post Malone - rockstar.mp3"
+        },
+        {
+            "songname":"Blinding Lights",
+            "author":"The Weeknd",
+            "imgpath":"albums/The_Weeknd_-_Blinding_Lights.png",
+            "audiopath":"music/The Weeknd - Blinding Lights.mp3"
+        }
+    ]
+}

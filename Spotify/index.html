@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify</title>
+
+    <script src="fontawesome.js"></script>
+
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" src="https://fonts.google.com/specimen/Montserrat" />
+
+    <script src="songcontrols.js"></script>
+  </head>
+  <body onload="init()" onmousedown="mousedown(event)" onmouseup="mouseup(event)">
+    <main>
+      <div class="menu">
+        <div class="menu-logo">
+          <i class="fab fa-spotify"></i>
+          <h1>Spotify</h1>
+        </div>
+        <div class="menu-navigation">
+          <div class="home">
+            <i class="fas fa-home"></i>
+            <h1>Home</h1>
+          </div>
+          <div class="menu-search">
+            <i class="fas fa-search"></i>
+            <h1>Search</h1>
+          </div>
+          <div class="menu-library">
+            <i class="fas fa-book"></i>
+            <h1>Library</h1>
+          </div>
+        </div>
+        <div class="menu-playlists">
+          <h3>PLAYLISTS</h3>
+          <div class="playlists">
+            <div>
+              <i class="fas fa-list"></i>
+              <h2>Playlist 1</h2>
+            </div>
+            <div>
+              <i class="fas fa-list"></i>
+              <h2>Playlist 2</h2>
+            </div>
+          </div>
+          <div class="playlists-divider"></div>
+        </div>
+        <div class="playlists2">
+          <h1>Some Playlist 1</h1>
+          <h1>Some Playlist 2</h1>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="header">
+          <div class="backforward">
+            <div>
+              <i class="fas fa-chevron-left"></i>
+            </div>
+            <div>
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </div>
+          <div class="user">
+            <div><i class="far fa-user"></i></div>
+            <h1>Cool User</h1>
+            <i class="fas fa-sort-down"></i>
+          </div>
+        </div>
+
+        <div class="songs-section">
+            <div class="songs-section-flex">
+            </div>
+        </div>
+
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+          <div class="currently-playing">
+            <img src="black.jpg">
+            <div class=playing-info>
+                <h1></h1>
+                <h2></h2>
+            </div>
+            <i class="far fa-heart"></i>
+          </div>
+          <div class="controls">
+            <div class=controls-top>
+                <div class="shuffle">
+                    <i class="fas fa-random"></i>
+                </div>
+                <div class="previous" onclick="prevbuttonclicked()">
+                    <i class="fas fa-step-backward"></i>
+                </div>
+                <button class="play" onclick="playbuttonclicked()">
+                    <i class="fas fa-play"></i>
+                </button>
+                <div class="next" onclick="skipbuttonclicked()">
+                    <i class="fas fa-step-forward"></i>
+                </div>
+                <div class="repeat" onclick = 'repeatclicked()'>
+                    <i class="fas fa-repeat"></i>
+                </div>
+             </div>
+            <div class="controls-timeline">
+                <h1 id="songplaytime">0:00</h1>
+                <div class="timeline" onclick="timelineclicked(event, this)">
+                    <span></span>
+                    <div class="timeindicator"></div>
+                </div>
+                <h1 id="songduration">0:00</h1>
+            </div>
+          </div>
+          <div class="right-controls">
+            <i class="fas fa-list"></i>
+            <i class="fas fa-speakers"></i>
+            <i class="fas fa-volume"></i>
+            <div class="volume" onclick="volumechanged(event, this)">
+                <span></span>
+                <div class="timeindicator"></div>
+            </div>
+          </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,425 @@
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(18, 18, 18);
+  font-family: "Montserrat";
+  color: white;
+  font-family: spotify-circular, spotify-circular-cyrillic,
+    spotify-circular-arabic, spotify-circular-hebrew, Helvetica Neue, helvetica,
+    arial, Hiragino Kaku Gothic Pro, Meiryo, MS Gothic, sans-serif;
+}
+
+main {
+  width: 100%;
+  display: grid;
+  grid-template-columns: min-content auto;
+}
+
+div.menu {
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  height: 100vh;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+div.menu-logo {
+  display: flex;
+  flex-direction: row;
+  font-size: 2em;
+  margin-bottom: 20px;
+  padding: 25px 15px;
+}
+div.menu-logo i {
+  font-size: 1.2em;
+  margin-right: 5px;
+}
+
+div.menu-navigation {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin-bottom: 20px;
+}
+div.menu-navigation div {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.5em;
+  padding: 10px;
+  width: 80%;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+div.menu-navigation div i {
+  margin-right: 10px;
+}
+div.menu-navigation div:hover {
+  transition: background-color 0.2s linear;
+  background-color: rgb(40, 40, 40);
+}
+
+div.menu-playlists {
+  font-size: 1em;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  color: rgb(179, 179, 179);
+}
+div.menu-playlists div > div {
+  display: flex;
+  flex-direction: row;
+}
+div.playlists {
+  margin-top: 20px;
+  margin-left: 10px;
+
+  display: flex;
+  flex-direction: column;
+}
+div.playlists > div {
+  margin-bottom: 10px;
+}
+div.playlists div i {
+  margin-right: 5px;
+}
+div.playlists div:hover {
+  transition: color 0.2s linear;
+  color: white;
+}
+
+div.playlists-divider {
+  background-color: rgba(128, 128, 128, 0.3);
+  height: 1px;
+  width: 90%;
+}
+
+div.playlists2 {
+  margin-top: 10px;
+  margin-left: 20px;
+  color: rgb(179, 179, 179);
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9em;
+}
+div.playlists2 h1 {
+  margin: 10px 0px;
+}
+div.playlists2 h1:hover {
+  transition: background-color linear 0.2s;
+  color: white;
+}
+
+div.content {
+  height: 100%;
+  width: 100%;
+  margin-left: 200px;
+}
+
+div.header {
+  position: absolute;
+  left: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: calc(100% - 200px);
+  height: 70px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+div.backforward {
+  color: rgb(156, 156, 156);
+
+  margin-left: 20px;
+  display: flex;
+}
+.backforward div {
+  background-color: rgb(4, 4, 4);
+  border-radius: 50%;
+  margin-right: 50px;
+  padding: 10px 10px;
+  text-align: center;
+}
+div.user {
+  padding: 5px 10px;
+  border-radius: 30px;
+  background-color: rgb(2, 2, 2);
+  margin-right: 15px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+div.user div {
+  background-color: rgb(51, 51, 51);
+  padding: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
+  font-size: 1.3em;
+}
+div.user h1 {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-right: 10px;
+}
+div.user:hover {
+  transition: 0.2s linear background-color;
+  background-color: rgb(40, 40, 40);
+}
+
+.songs-section {
+  position: fixed;
+  height: Calc(100% - 20px);
+  margin-top: 70px;
+  padding: 15px;
+}
+.songs-section-flex {
+  height: calc(100% - 150px);
+  
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  justify-content: space-evenly;
+  align-content: flex-start;
+  align-items: flex-start;
+  scrollbar-face-color: pink;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(18, 18, 18);
+  border: 4px solid transparent;
+  /* background-clip: content-box; */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(90, 90, 90);
+}
+
+div.song {
+  margin: 10px;
+  height: 220px;
+  width: 150px;
+  background-color: rgb(20, 20, 20);
+  border-radius: 5px;
+  padding:10px;
+
+  display:flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+div.song:hover{
+    transition: background-color .2s linear;
+    background-color: rgb(40, 40, 40);
+}
+div.song img{
+    align-self: center;
+    width: 130px;
+    height: 130px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.322);
+}
+div.song-text{
+    display:flex;
+    flex-direction: column;
+}
+div.song-text{
+    height:100%;
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+}
+div.song h1{
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+div.song h2{
+    font-size:.8em;
+    color:rgb(174, 174, 174);
+}
+
+
+
+
+div.footer {
+  position: absolute;
+  border-top: 1px rgb(40, 40, 40) solid;
+  background-color: rgb(18, 18, 18);
+  width: 100%;
+  height: 80px;
+  top: calc(100% - 81px);
+
+  display:grid;
+  grid-template-columns: 25% 50% 25%;
+
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-between; */
+}
+.footer .currently-playing{
+    height: 100%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left:20px;
+}
+.currently-playing img{
+    width:60px;
+    height: 60px;
+    margin-right: 20px;
+}
+.currently-playing .playing-info{
+    margin-right: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+.playing-info h1{
+    margin-bottom: 10px;
+    font-size:.9em;
+    font-weight: 700;
+}
+.playing-info h1:hover, .playing-info h2:hover{
+    text-decoration: underline;
+}
+.playing-info h2{
+    font-size:.75em;
+    color:rgb(174, 174, 174);
+}
+
+div.controls{
+    margin-top:5px;
+    align-self: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+div.controls-top{
+    display:flex;
+    flex-direction: row;
+}
+div.controls-top div{
+    margin: 0 10px;
+    color:rgb(194, 194, 194);
+}
+div.controls-top div:hover{
+  transition: all .1s;
+  color:white;
+}
+div.controls-top .play{
+    background-color: white;
+    color:black;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: translateY(-8px);
+    border: none;
+    line-height: 100%;
+}
+div.controls-top .play i{
+    font-size:.8em;
+}
+div.controls-timeline{
+    margin-top:10px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:100%;
+}
+div.controls-timeline div.timeline{
+    width: 80%;
+    height: 5px;
+    margin-right: 20px;
+    margin-left: 20px;
+    
+    border-radius: 10px;
+    background-color: rgb(83, 83, 83);
+    transform: translateY(5px);
+}
+div.controls-timeline div.timeline span{
+  display:block;  
+  height:100%;
+  width:0;
+  background: #b3b3b3;
+  border-radius:2px;
+}
+div.controls-timeline div.timeline .timeindicator{
+  height:8px;
+  width:8px;
+  top:-3px;
+  border: solid 2px rgb(160, 160, 160);
+  background: white;
+  border-radius:50%;
+  position: absolute;
+  left:0%;
+  transform:translateX(-50%);
+  display: none;
+}
+
+div.controls-timeline div.timeline:hover > span, div.controls-timeline div.timeline span:hover{
+  background-color: rgba(28,185,83,255);
+}
+div.controls-timeline div.timeline:hover .timeindicator, div.controls-timeline div.timeline span:hover .timeindicator{
+  display: block;
+}
+
+div.right-controls{
+    display:flex;
+    justify-content: flex-end;
+    align-self: center;
+}
+div.right-controls i{
+    margin-right: 20px;
+    color:rgb(179, 179, 179);
+}
+div.right-controls .volume{
+    width:100px;
+    height: 5px;
+    margin-right: 20px;
+    margin-left: 10px;
+    
+    border-radius: 10px;
+    background-color: rgb(83, 83, 83);
+    transform: translateY(5px);
+}
+
+div.right-controls .volume span{
+  display:block;  
+  height:100%;
+  width:0;
+  background: #b3b3b3;
+  border-radius:2px;
+}
+
+div.right-controls .volume .timeindicator{
+  height:8px;
+  width:8px;
+  top:-3px;
+  border: solid 2px rgb(160, 160, 160);
+  background: white;
+  border-radius:50%;
+  position: absolute;
+  left:0%;
+  transform:translateX(-50%);
+  display: none;
+}
+
+div.right-controls .volume:hover > span, div.right-controls .volume span:hover{
+  background-color: rgba(28,185,83,255);
+}
+div.right-controls .volume:hover .timeindicator, div.right-controls .volume span:hover .timeindicator{
+  display: block;
+}
