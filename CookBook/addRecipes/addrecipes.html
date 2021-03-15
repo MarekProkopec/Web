@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <link rel="stylesheet" href="../reset.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="addrecipes.css">
+        <title>CookBook</title>
+    </head>
+    <body>
+        <div id="viewport">
+            <h1 id='title'>Create new Recipe</h1>
+
+            <input id="name" type="text" placeholder="recipe name">
+            <input id="cooktime" type="text" placeholder="cooktime">
+            <input id="kcal" type="text" placeholder="kcal">
+            <input id="kcal" type="search" placeholder="kcal">
+
+            <div id="course">
+                <h2>Course:</h2>
+                <div>
+                    <label for="course-main">Main</label>
+                    <input name="course-radio" id="course-main" type="radio" value="Main">
+                </div>
+                <div>
+                    <label for="course-main">Dessert</label>
+                    <input name="course-radio" id="course-main" type="radio" value="Dessert">
+                </div>
+                <div>
+                    <label for="course-main">Breakfast</label>
+                    <input name="course-radio" id="course-main" type="radio" value="Breakfast">
+                </div>
+                <div>
+                    <label for="course-main">Side</label>
+                    <input name="course-radio" id="course-main" type="radio" value="Side">
+                </div>
+
+            </div>
+
+            <div id="imageselect">  
+                <label for="image">select image:</label>             
+                <input onchange="imgchange(this)" id="image" type="text" placeholder="image source" value="../images/">
+                <img id="previewimage" alt="no image found">
+            </div>
+
+
+
+
+
+
+            <button id="submit" type='submit'>Submit</button>
+        </div>
+
+        <script src="addrecipes.js"></script>
+    </body>
+</html>

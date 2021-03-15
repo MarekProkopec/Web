@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+body, html{
+    font-family: 'Amatic SC', cursive;
+    height:100%;
+    width:100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+}
+
+header{
+    position: relative;
+    
+}
+
+header > img{
+    height:100vh;
+    width:100vw;
+    margin-bottom: 50px;
+}
+
+#CookBook-text{
+    font-family: 'Lobster', cursive;
+    position: absolute;
+    top:65vh;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 3em;
+    text-align: center;
+    color:#eadca6;
+    background-color:#e2c1752f;
+
+    padding:20px;
+    border-radius: 30px;
+    box-shadow: 0 0 30px 30px #e2c1752f;
+}
+
+#CookBook-text > h1{
+    font-weight: 700;
+}
+#CookBook-text > h2{
+    opacity: .9;
+    font-size: .5em;
+    font-weight: 700;
+}
+
+main{
+    height:100%;
+    width:100%;
+
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+#introduction{
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+#welcome{
+    font-size: 5em;
+    margin-bottom:30px;
+}
+
+#intro1{
+    padding:50px;
+
+    display:grid;
+    grid-template-columns: auto 45%;
+    align-items: center;
+    gap:50px;
+}
+
+#intro1>img{
+    width: 100%;
+    border-radius: 30px;
+}
+#intro1>p{
+    font-size:3em;
+}
+
+#intro2{
+    padding:50px;
+
+    display:grid;
+    grid-template-columns: 40% auto;
+    align-items: center;
+    gap:50px;
+}
+
+#intro2>img{
+    width: 100%;
+    border-radius: 30px;
+}
+#intro2>p{
+    font-size:3em;
+}
+
+#recipes{
+    color:black;
+    font-size:3em;
+    margin-bottom: 20px;
+}

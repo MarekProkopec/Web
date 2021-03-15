@@ -1,0 +1,62 @@
+body, html{
+    height:100%;
+    width:100%;
+}
+body{
+    padding:20px;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#viewport{
+    padding:20px;
+
+    width:90%;
+    border:solid 3px black;
+    border-radius: 30px;
+
+    display:flex;
+    
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#viewport * {
+    margin-top:10px;
+}
+
+#course{
+    display:flex;
+    width:40%;
+    justify-content: space-between;
+}
+
+#title{
+    align-self: center;
+    font-size: 2rem;
+}
+
+#submit{
+    align-self: center;
+    padding:10px 20px;
+    border-radius: 15px;
+    color:white;
+    background-color: green;
+}
+
+#imageselect{
+    display: flex;
+    align-items: center;
+}
+#imageselect > input{
+    width:500px;
+}
+
+#previewimage{
+    height: 100px;
+    width: 100px;
+    border:solid 2px black;
+}

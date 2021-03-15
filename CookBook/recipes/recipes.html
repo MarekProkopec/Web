@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <link rel="stylesheet" href="../reset.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="recipes.css">
+        <script src="https://kit.fontawesome.com/ee07b46b98.js" crossorigin="anonymous"></script>
+        <title>Recipes</title>
+
+        <script src="recipes.js"></script>
+    </head>
+    <body onload="setup()">
+        <header>
+            <form id="basic-seetings">
+                <div id="course">
+                    <h1>Course:</h1>
+                    
+                    <div class="course-selection">
+                        <label for="radio-course-main">Main</label>
+                        <input onchange="getCourses()" id="radio-course-main" name="couse-radio" class="course" value="main" type="checkbox" checked>
+                    </div>
+
+                    <div class="course-selection">             
+                    <label for="radio-course-side">Side</label>
+                    <input onchange="getCourses()" id="radio-course-side" name="couse-radio" class="course" value="side" type="checkbox" checked>                
+                    </div>
+
+                    <div class="course-selection">
+                        <label for="radio-course-dessert">Dessert</label>
+                        <input onchange="getCourses()" id="radio-course-dessert" name="couse-radio" class="course" value="dessert" type="checkbox" checked>
+                    </div>
+
+                    <div class="course-selection">
+                        <label for="radio-course-breakfast">Breakfast</label>
+                        <input onchange="getCourses()" id="radio-course-breakfast" name="couse-radio" class="course" value="breakfast" type="checkbox" checked>
+                    </div>               
+                
+                </div>
+            </form>
+            <div id="sorting">
+                <h1>Sorting:</h1>
+                <div id="sort-views" onclick="sortchanged(this)" class="sorting">
+                    <h1>views</h1>
+                </div>
+                <div id="sort-rating" onclick="sortchanged(this)" class="sorting">
+                    <h1>rating</h1>
+                </div>
+                <div id="sort-time" onclick="sortchanged(this)" class="sorting">
+                    <h1>cooktime</h1>
+                </div>
+                <div id="sort-time" onclick="sortchanged(this)" class="sorting">
+                    <h1>calories</h1>
+                </div>
+                <div id="sort-A-Z" onclick="sortchanged(this)" class="sorting">
+                    <h1>A-Z</h1>
+                </div>
+            </div>
+        </header>
+        <main>            
+        </main>
+    </body>
+</html>

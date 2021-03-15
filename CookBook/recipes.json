@@ -1,0 +1,34 @@
+{
+    "recipes":[
+    {
+        "name":"Lasagne",
+        "link":"https://www.youtube.com/watch?v=k-uci5w_SII",
+        "rating":1,
+        "cooktime":40,
+        "kcal":250,
+        "views":10000,
+        "course":"Dessert",
+        "image":"https://img.taste.com.au/7Hc2lg09/taste/2016/11/beef-lasagne-77009-1.jpeg"
+    },
+    {
+        "name":"Spaghetti",
+        "link":"https://www.youtube.com/watch?v=k-uci5w_SII",
+        "rating":3,
+        "cooktime":20,
+        "kcal":399,
+        "views":200,
+        "course":"Main",
+        "image":"https://www.thewholesomedish.com/wp-content/uploads/2020/08/The-Best-Classic-Spaghetti-1200-500x375.jpg"
+    },
+    {
+        "name":"Chorizo mozzarella gnnochi",
+        "link":"https://www.youtube.com/watch?v=k-uci5w_SII",
+        "rating":5,
+        "cooktime":30,
+        "kcal":540,
+        "views":100,
+        "course":"Breakfast",
+        "image":"https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg?quality=90&resize=960,872"
+    }
+    ]
+}
