@@ -1,0 +1,177 @@
+{
+    "elements":[
+        {
+        "type":"h5",
+        "class":"element-upper",
+        "text":["&lt;","body","&gt;"]        
+        },
+        {
+        "type":"h5",
+        "class":"element-lower",
+        "text":["&lt;","/body","&gt;"]        
+        },
+
+
+        {
+        "type":"div",
+        "class":"container",
+        "elements":[
+            {
+            "type":"h5",
+            "class":"element-upper",
+            "text":["&lt;","div class='basicinfo'","&gt;"],
+            "parent":0   
+            },
+            {
+            "type":"h5",
+            "class":"element-lower",
+            "text":["&lt;","/div","&gt;"],
+            "parent":0   
+            },
+
+            {
+            "type":"h1",
+            "class":"text",
+            "text":["<span>&lt;h1&gt;</span>","Marek Prokopec","<span>&lt;/h1&gt;</span>"],
+            "parent":0   
+            },
+            {
+            "type":"h1",
+            "class":"text",
+            "text":["<span>&lt;h1&gt;</span>","17 y.o.","<span>&lt;/h1&gt;</span>"],
+            "parent":0   
+            },
+            {
+            "type":"h1",
+            "class":"text",
+            "text":["<span>&lt;h1&gt;</span>","Student","<span>&lt;/h1&gt;</span>"],
+            "parent":0   
+            },
+            {
+            "type":"h1",
+            "class":"text",
+            "text":["<span>&lt;h1&gt;</span>","SSPS","<span>&lt;/h1&gt;</span>"],
+            "parent":0   
+            }
+        ]      
+        },
+
+
+        {
+        "type":"div",
+        "class":"container",
+        "elements":[
+            {
+            "type":"h5",
+            "class":"element-upper",
+            "text":["&lt;","ul class='skills'","&gt;"],
+            "parent":0   
+            },
+            {
+            "type":"h5",
+            "class":"element-lower",
+            "text":["&lt;","/ul","&gt;"],
+            "parent":0   
+            },
+
+            {
+            "type":"h1",
+            "class":"text",
+            "text":["<span>&lt;li&gt;</span>","C#","<span>&lt;/li&gt;</span>"],
+            "parent":0   
+            },
+            {
+            "type":"h1",
+            "class":"text",
+            "text":["<span>&lt;li&gt;</span>","Python","<span>&lt;/li&gt;</span>"],
+            "parent":0   
+            },
+            {
+            "type":"h1",
+            "class":"text",
+            "text":["<span>&lt;li&gt;</span>","html","<span>&lt;/li&gt;</span>"],
+            "parent":0   
+            },
+            {
+            "type":"h1",
+            "class":"text",
+            "text":["<span>&lt;li&gt;</span>","CSS","<span>&lt;/li&gt;</span>"],
+            "parent":0   
+            },
+            {
+            "type":"h1",
+            "class":"text",
+            "text":["<span>&lt;li&gt;</span>","Javascript","<span>&lt;/li&gt;</span>"],
+            "parent":0   
+            },
+            {
+            "type":"h1",
+            "class":"text",
+            "text":["<span>&lt;li&gt;</span>","SSPS","<span>&lt;/li&gt;</span>"],
+            "parent":0   
+            }
+        ]
+        },
+
+
+        {
+        "type":"div",
+        "class":"container",
+        "elements":[
+            {
+            "type":"h5",
+            "class":"element-upper",
+            "text":["&lt;","dl class='contacts'","&gt;"],
+            "parent":0   
+            },
+            {
+            "type":"h5",
+            "class":"element-lower",
+            "text":["&lt;","/dl","&gt;"],
+            "parent":0   
+            },
+
+            {
+            "type":"h1",
+            "class":"text",
+            "text":["<span>&lt;dt&gt;</span>","e-mail:","<span>&lt;/dt&gt;</span>"],
+            "parent":0   
+            },
+            {
+                "type":"div",
+                "class":"container",
+                "parent":0,
+                "elements":[
+                    {
+                        "type":"h1",
+                        "class":"text",
+                        "text":["<span>&lt;dd&gt;</span>","marekprokopec512@gmail.com","<span>&lt;/dd&gt;</span>"],
+                        "parent":0   
+                    }
+                ]
+            },            
+            {
+            "type":"h1",
+            "class":"text",
+            "text":["<span>&lt;dt&gt;</span>","phone:","<span>&lt;/dt&gt;</span>"],
+            "parent":0   
+            },
+            {
+            "type":"div",
+            "class":"container",
+            "parent":0,
+            "elements":[
+                {
+                    "type":"h1",
+                    "class":"text",
+                    "text":["<span>&lt;dd&gt;</span>","+420 733 424 968","<span>&lt;/dd&gt;</span>"],
+                    "parent":0   
+                }
+            ]
+            }
+
+        ]
+        }
+    ]
+    
+}
