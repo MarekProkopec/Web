@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="CodePen" />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico"
+    />
+
+    <link
+      rel="mask-icon"
+      type=""
+      href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg"
+      color="#111"
+    />
+
+    <title>CodePen - Flip clock</title>
+
+    <style>
+      body,
+      html {
+        height: 100vh;
+        width: 100vw;
+      }
+
+      body {
+        padding: 0;
+        margin: 0;
+        background: #393e46;
+        overflow: hidden;
+      }
+
+      .container {
+        display: flex;
+      }
+
+      #app {
+        font-family: Avenir, Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-align: center;
+        color: #eeeeee;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #app .middle {
+        height: 20rem;
+        width: 5rem;
+        font-size: 20rem;
+        line-height: 20rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .card {
+        height: 20rem;
+        width: 10rem;
+        position: relative;
+        background: #222831;
+        color: #eeeeee;
+        border-radius: 20px;
+        padding: 5px;
+        margin: 0 2px;
+      }
+      .card .top,
+      .card .bottom,
+      .card .newTop,
+      .card .newBottom {
+        position: absolute;
+        height: 10rem;
+        width: 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 15rem;
+        line-height: 20rem;
+        overflow: hidden;
+        background: #222831;
+        border-radius: 20px;
+      }
+      .card .top,
+      .card .newTop {
+        align-items: flex-start;
+        transform-origin: bottom;
+        z-index: 9;
+      }
+      .card .top {
+        z-index: 10;
+      }
+      .card .top.animate {
+        animation: flip 0.2s linear;
+      }
+      .card .bottom,
+      .card .newBottom {
+        align-items: flex-end;
+        bottom: 0;
+      }
+      .card .newBottom {
+        z-index: 99;
+        background: transparent;
+        color: transparent;
+        background: #222831;
+        color: #eeeeee;
+        transform: rotateX(90deg);
+        transform-origin: top;
+      }
+      .card .newBottom.animate {
+        animation: newBottomFlip 0.2s linear;
+      }
+      .card .split {
+        height: 5px;
+        width: 100%;
+        background: #222831;
+        left: 50%;
+        top: 50%;
+        position: absolute;
+        z-index: 999;
+        transform: translate(-50%, -50%);
+      }
+
+      @keyframes flip {
+        0% {
+          transform: rotateX(0);
+        }
+        49.9999% {
+          color: #eeeeee;
+        }
+        50% {
+          color: #222831;
+        }
+        100% {
+          color: #222831;
+          transform: rotateX(-180deg);
+        }
+      }
+      @keyframes newBottomFlip {
+        50% {
+          transform: rotateX(90deg);
+        }
+        100% {
+          transform: rotateX(0deg);
+        }
+      }
+    </style>
+
+    <script>
+      window.console = window.console || function (t) {};
+    </script>
+
+    <script>
+      if (document.location.search.match(/type=embed/gi)) {
+        window.parent.postMessage("resize", "*");
+      }
+    </script>
+  </head>
+
+  <body translate="no">
+    <div id="app">
+      <div class="container" v-for="(item, index) in time" :key="index">
+        <card :num="item"></card>
+
+        <div class="middle" v-if="index%2 == 1 && index != time.length-1">
+          :
+        </div>
+      </div>
+    </div>
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js"></script>
+    <script id="rendered-js">
+      Vue.component("Card", {
+        template: `<div class="card">
+    <div class="top" ref="animate1">
+      {{ newNum }}
+    </div>
+
+    <div class="newTop">
+      {{ num }}
+    </div>
+
+    <div class="bottom">
+      {{ newNum }}
+    </div>
+
+    <div class="newBottom" ref="animate2">
+      {{ num }}
+    </div>
+
+    <div class="split"></div>
+  </div>`,
+        props: ["num"],
+        data() {
+          return {
+            newNum: 1,
+            animationTime: 200,
+          };
+        },
+        updated() {
+          this.$refs.animate1.classList.add("animate");
+          this.$refs.animate2.classList.add("animate");
+
+          setTimeout(() => {
+            this.newNum = this.num;
+          }, this.animationTime - 20);
+
+          setTimeout(() => {
+            this.$refs.animate1.classList.remove("animate");
+            this.$refs.animate2.classList.remove("animate");
+          }, this.animationTime);
+        },
+        created() {
+          this.newNum = this.num;
+        },
+      });
+
+      var app = new Vue({
+        el: "#app",
+        data: {
+          time: [],
+          oldDate: undefined,
+        },
+
+        created() {
+          setInterval(() => {
+            const now = new Date();
+            if (
+              this.oldDate == undefined ||
+              this.oldDate.getSeconds() != now.getSeconds()
+            ) {
+              this.oldDate = new Date();
+
+              const sec = now.getSeconds().toString();
+              let sec1 = sec.slice(-2, 1);
+              let sec2 = sec.slice(-1);
+
+              if (sec.length == 1) {
+                sec1 = 0;
+              }
+
+              const min = now.getMinutes().toString();
+              let min1 = min.slice(-2, 1);
+              let min2 = min.slice(-1);
+
+              if (min.length == 1) {
+                min1 = 0;
+              }
+
+              const hr = now.getHours().toString();
+              let hr1 = hr.slice(-2, 1);
+              let hr2 = hr.slice(-1);
+
+              if (hr.length == 1) {
+                hr1 = 0;
+              }
+
+              this.time = [hr1, hr2, min1, min2, sec1, sec2];
+            }
+          }, 250);
+        },
+      });
+      //# sourceURL=pen.js
+    </script>
+  </body>
+</html>
